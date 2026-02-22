@@ -1,20 +1,38 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# GrammarMaster: 英语语法填空互动练习
 
-# Run and deploy your AI Studio app
+专为初中生设计的英语语法填空练习平台，涵盖非谓语动词、从句、连词等核心考点，提供即时反馈与深度解析。
 
-This contains everything you need to run your app locally.
+## 功能特点
 
-View your app in AI Studio: https://ai.studio/apps/6c1c1618-48f5-468f-808b-bb5c22b10dac
+- **互动填空**：点击按钮即可填充空格，实时预览。
+- **即时反馈**：提交后立即显示正误，并高亮错误项。
+- **深度解析**：提供语法规则、例句、常见错误辨析及中文翻译。
+- **题库筛选**：支持按语法点（定语从句、非谓语等）和难度（初/中/高）筛选。
+- **响应式设计**：完美适配手机、平板和电脑。
 
-## Run Locally
+## 本地开发
 
-**Prerequisites:**  Node.js
+1. 安装依赖：
+   ```bash
+   npm install
+   ```
 
+2. 启动开发服务器：
+   ```bash
+   npm run dev
+   ```
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+## 部署到 Vercel
+
+1. 将代码推送到 GitHub 仓库。
+2. 在 [Vercel 控制台](https://vercel.com/new) 导入该仓库。
+3. Vercel 会自动识别 Vite 项目并进行构建。
+4. **环境变量**：如果使用了 Gemini API，请在 Vercel 的项目设置中添加 `GEMINI_API_KEY` 环境变量。
+
+## 技术栈
+
+- React 19
+- Vite
+- Tailwind CSS 4
+- Lucide React (图标)
+- Motion (动画)
